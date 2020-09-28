@@ -1,0 +1,482 @@
+<!doctype html>
+<html data-n-head-ssr>
+
+<head>
+    <title>Altra Travels</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta data-n-head="ssr" name="trustpilot-one-time-domain-verification-id"
+        content="016033a5-a0a3-4b08-8b63-839d7df94213">
+    <meta data-n-head="ssr" name="msapplication-TileColor" content="#ffffff">
+    <meta data-n-head="ssr" name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    .parrent .nav-tabs {
+        border-bottom: 2px solid #DDD;
+    }
+
+    .parrent .nav-tabs>li.active>a,
+    .parrent .nav-tabs>li.active>a:focus,
+    .parrent .nav-tabs>li.active>a:hover {
+        border-width: 0;
+    }
+
+    .parrent .nav-tabs>li>a {
+        border: none;
+        color: #ffffff;
+        background: #5a4080;
+    }
+
+    .parrent .nav-tabs>li.active>a,
+    .parrent .nav-tabs>li>a:hover {
+        border: none;
+        color: #5a4080 !important;
+        background: #fff;
+    }
+
+    .parrent .nav-tabs>li>a::after {
+        content: "";
+        background: #5a4080;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: -1px;
+        transition: all 250ms ease 0s;
+        transform: scale(0);
+    }
+
+    .parrent .nav-tabs>li.active>a::after,
+    .parrent .nav-tabs>li:hover>a::after {
+        transform: scale(1);
+    }
+
+    .parrent .tab-nav>li>a::after {
+        background: ##5a4080 none repeat scroll 0% 0%;
+        color: #fff;
+    }
+
+    .parrent .tab-pane {
+        padding: 15px 0;
+    }
+
+    .parrent .tab-content {
+        padding: 20px
+    }
+
+    .parrent .nav-tabs>li {
+        width: 20%;
+        text-align: center;
+    }
+
+    .parrent .card {
+        background: #FFF none repeat scroll 0% 0%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+    }
+
+    @media all and (max-width:724px) {
+        .parrent .nav-tabs>li>a>span {
+            display: none;
+        }
+
+        .parrent .nav-tabs>li>a {
+            padding: 5px 5px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Nav tabs -->
+            <div class="card">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab"
+                            data-toggle="tab"> <span>Description</span></a></li>
+                    <li role="presentation"><a href="#vendor" aria-controls="vendor" role="tab" data-toggle="tab">
+                            <span>Vendor</span></a></li>
+                    <li role="presentation"><a href="#itinerary" aria-controls="itinerary" role="tab" data-toggle="tab">
+                            <span>Itinerary</span></a></li>
+                    <li role="presentation"><a href="#rating" aria-controls="rating" role="tab" data-toggle="tab">
+                            <span>Rating & Review</span></a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="description"> 
+                     <div class="tab-body">
+                        <p class="product_deatil">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Quasi error nisi reprehenderit inventore consectetur, pariatur quisquam, quam
+                          obcaecati architecto repellat repellendus, saepe facilis illo nesciunt! Atque
+                          corrupti velit doloremque aspernatur</p>
+
+                        <div class="more_deatl">
+                          <span class="minus_btn"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                          <span class="more_det">More Detail</span>
+
+                        </div>
+                        <div class="product-attributes">
+                          <div class="attribute-group">
+                            <h3 class="primary-color">Things To Carry</h3>
+                            <ul class="attribute-list">
+                              <li>
+                                <label class="label">Comfortable clothes</label>
+                              </li>
+                              <li>
+                                <label class="label">Good quality trekking shoes, slippers and extra pair of socks</label>
+                              </li>
+                              <li>
+                                <label class="label">Sunscreen lotion or any other skin moisturisers</label>
+                              </li>
+                              <li>
+                                <label class="label">Water bottles, trendy backpack and energy bars/snacks</label>
+                              </li>
+                              <li>
+                                <label class="label">A pair of sunglasses and camera</label>
+                              </li>
+                              <li>
+                                <label class="label">Flash light (with spare batteries)</label>
+                              </li>
+                              <li>
+                                <label class="label">Insect repellent and emergency medical kit</label>
+                              </li>
+                            </ul>
+
+                          </div>
+                          <div class="attribute-group">
+                            <h3 class="primary-color">Advisory</h3>
+                            <ul class="attribute-list">
+                              <li>
+                                <label class="label">Climatic conditions in the high altitudes vary from the plains; take adequate time to get acclimatized to high altitudes.</label>
+                              </li>
+                              <li>
+                                <label class="label">Pay heed to the tour leaders or instructors in order to enjoy a safe and sound experience.</label>
+                              </li>
+                              <li>
+                                <label class="label">Avoid roaming during the nights.</label>
+                              </li>
+                              <li>
+                                <label class="label">The tour takes place through eco-friendly zone; do not encourage littering the local sites or campsites.</label>
+                              </li>
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+<!-- tab 2-->
+                    <div role="tabpanel" class="tab-pane" id="vendor">Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book.
+                    </div>
+                    <!-- tab 3 -->
+                    <div role="tabpanel" class="tab-pane" id="itinerary">
+                        <ul class="itinerary_list">
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 1 - Drive from Delhi to Manali</h4>
+                              <p class="itinerary_sub_title-data ">Overnight Journey to Manali</p>
+                              <p class="itinerary_sub_title-data">With your arrival in Delhi, the first leg of this awesome journey
+                                begins. Travel overnight by state of the art, comfortable Volvo buses to the
+                                charming town of Manali, which is the starting point of your thrilling Himalayan
+                                adventure.</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 2 - Manali (2,000m)</h4>
+                              <p class="itinerary_sub_title-data">Acclimatization Day</p>
+                              <p class="itinerary_sub_title-data">Arrive in the quaint town of Manali in the wee hours of the morning,
+                                and drive off to a comfortable hotel. Get acquainted with your fellow travellers
+                                and spend the day relaxing at the hotel and getting acclimatized to the high
+                                altitude. Enjoy short walks in the lovely scenic town of Manali. Stay at the hotel
+                                overnight.</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 3 - Drive from Manali to Batal (3,960m) (120km)
+                              </h4>
+                              <p class="itinerary_sub_title-data">6 Hours Drive, Acclimatization Hike, Rohtang Pass, Spiti</p>
+                              <p class="itinerary_sub_title-data">The real adventure starts today. Start on the first leg of your
+                                exciting journey, with a drive to Batal. The trail is really beautiful, as you
+                                pass by the lush and exotic Kullu Manali valley, to a dramatic change in landscape
+                                at the Lahaul Spiti valley, where the land is barren with dune like terrain.
+                              </p>
+                              <p class="itinerary_sub_title-data">Spend some moments at the famed Rohtang pass, enjoying the
+                                breathtaking scenery around. Arrive at Batal and set up tents to camp here
+                                overnight. Go on a short acclimatization hike later in the evening, to face the
+                                exciting trek in the days ahead. Camp over night in tents, amidst the exotic lush
+                                landscapes</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 4 - Trek from Batal to Chandertal (3,907m)</h4>
+                              <p class="itinerary_sub_title-data">6 Hours Trek, Chandertal Lake, Chandra River, Bara Shigri Glacier,
+                                Lakeside Camping</p>
+                              <p class="itinerary_sub_title-data">&nbsp; Start your day with a fortifying breakfast to gear you up for
+                                the exciting day ahead and embark on your trek to the mesmerising Chandertal Lake.
+                                The trail requires you to cross the Chandra River and ascend from Batal. Enjoy the
+                                stunning views of the beautiful Bara Shigri glacier and snow capped Himalayan
+                                peaks. Arriving at Chandertal, be prepared to be enthralled by the sheer natural
+                                beauty of the place. The lake is nestled among high mountains and you will find
+                                Gaddi shepherds in the region, out to graze their flock; camp overnight in this
+                                little piece of heaven on earth.</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 5 - Trek from Chandertal to Topko Gongma
+                                (4,320m)</h4>
+                                <p class="itinerary_sub_title-data">5-6 Hours Trek, Tokpo Gongma, Steep Ascend</p>
+                                <p class="itinerary_sub_title-data">Start your day early and proceed to trek towards Topko Gongma. The
+                                trail takes you through a steep ascend today. Enjoy your walk, feasting your eyes
+                                on the lovely natural beauty and delightful crystal clear streams which dot this
+                                majestic trail. Walk your way through barren land scapes, with steep slopes and
+                                boulder fields. Camp overnight at tents, in Topko Gongma</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 6 - Trek from Tokpo Gongma to Tokpo Yongma
+                                (4,640m)</h4>
+                                <p class="itinerary_sub_title-data">5 Hours Trek, Trek to Tokpo Yongma, Chandrabhanga Peak</p>
+                                <p class="itinerary_sub_title-data">It is vital that you start on your trek to Tokpo Yongma, early in
+                                the day, so that you can cross the rivers before the water level rises in them.
+                                The trail is a sheer delight with lovely views of the majestic ice clad peaks, of
+                                the Chandrabhaga range. Based on the situation at the time of the trek, you will
+                                be required to either wade through icy cold waters of a stream or walk through
+                                snowy bridges to reach the camp site at Tokpo Yongma. Camp in the lovely and
+                                serene campsite, dotted with local shepherds, and spend the night in the lap of
+                                nature.</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 7 - Trek from Tokpo Yongma to Baralacha La
+                                (4900m), Drive from Baralacha La to Manali (7 Hours)</h4>
+                                <p class="itinerary_sub_title-data">5 Hours Trek, Chandra valley, Scenic Drives, Manali-Leh Highway,
+                                Last Day of Trek</p>
+                                <p class="itinerary_sub_title-data">After a wholesome breakfast at the camp, gear up for a steep climb
+                                along the slopes of the lovely Chandra valley and be rewarded with a stunning view
+                                of the majestic Himalayan ranges beyond the Baralacha la pass , that is sure to be
+                                etched in your memory for a long time to come.&nbsp; Continue on your trek by
+                                ascending to the Baralacha la south peak and then descend it and cross a river to
+                                arrive at a lovely green meadow, which will take you the Baralacha north summit.
+                                Here the famed Manali Leh roads meet the pass. This is the last leg of your trek,
+                                after which you can travel back to Manali by a vehicle, which will transport you
+                                to the hotel at Manali. Stay overnight in Manali.</p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 8 - Departure from Manali</h4>
+                              <p class="itinerary_sub_title-data">Leisure Day, Evening Departure</p>
+                              <p class="itinerary_sub_title-data">Spend the day relaxing. Enjoy a leisurely breakfast at the hotel and
+                                catch up on some much needed rest, after your thrilling trek. Get dropped at the
+                                Volvo bus stand, later in the evening and take an overnight trip back to Delhi.
+                              </p>
+                            </li>
+                            <li>
+                              <h4 class="itinerary_sub_title">Day 9 - Arrival at Delhi</h4>
+                              <p class="itinerary_sub_title-data">Tour Ends Here</p>
+                              <p class="itinerary_sub_title-data">Arrive at Delhi early in the morning; bid farewell to your travel
+                                mates, who have been part of your amazing journey and carry back with you, never
+                                to be forgotten memories of a week spent amongst nature, in all her unspoiled
+                                glory and splendour.</p>
+                            </li>
+                          </ul>
+                    </div>
+                    <!-- tab 4 -->
+                    <div role="tabpanel" class="tab-pane" id="rating">
+                        <div class="row">
+                            <div class="col-sm-3">
+                              <div class="rating-block">
+                                <h4>Average user rating</h4>
+                                <h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
+                                <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                                  <span class="fa fa-star" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                                  <span class="fa fa-star" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                                  <span class="fa fa-star" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+                                  <span class="fa fa-star" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+                                  <span class="fa fa-star" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <h4>Rating breakdown</h4>
+                              <div class="pull-left">
+                                <div class="pull-left" style="width:35px; line-height:1;">
+                                  <div style="height:9px; margin:5px 0;">5 <span class="fa fa-star"></span></div>
+                                </div>
+                                <div class="pull-left" style="width:180px;">
+                                  <div class="progress" style="height:9px; margin:8px 0;">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pull-right" style="margin-left:10px;">1</div>
+                              </div>
+                              <div class="pull-left">
+                                <div class="pull-left" style="width:35px; line-height:1;">
+                                  <div style="height:9px; margin:5px 0;">4 <span class="fa fa-star"></span></div>
+                                </div>
+                                <div class="pull-left" style="width:180px;">
+                                  <div class="progress" style="height:9px; margin:8px 0;">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pull-right" style="margin-left:10px;">1</div>
+                              </div>
+                              <div class="pull-left">
+                                <div class="pull-left" style="width:35px; line-height:1;">
+                                  <div style="height:9px; margin:5px 0;">3 <span class="fa fa-star"></span></div>
+                                </div>
+                                <div class="pull-left" style="width:180px;">
+                                  <div class="progress" style="height:9px; margin:8px 0;">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pull-right" style="margin-left:10px;">0</div>
+                              </div>
+                              <div class="pull-left">
+                                <div class="pull-left" style="width:35px; line-height:1;">
+                                  <div style="height:9px; margin:5px 0;">2 <span class="fa fa-star"></span></div>
+                                </div>
+                                <div class="pull-left" style="width:180px;">
+                                  <div class="progress" style="height:9px; margin:8px 0;">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pull-right" style="margin-left:10px;">0</div>
+                              </div>
+                              <div class="pull-left">
+                                <div class="pull-left" style="width:35px; line-height:1;">
+                                  <div style="height:9px; margin:5px 0;">1 <span class="fa fa-star"></span></div>
+                                </div>
+                                <div class="pull-left" style="width:180px;">
+                                  <div class="progress" style="height:9px; margin:8px 0;">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pull-right" style="margin-left:10px;">0</div>
+                              </div>
+                            </div>			
+                          </div>	<!-- row ends -->		
+                          
+                          <div class="row"> <!-- main row start -->
+                            <div class="col-sm-7">
+                              <hr/>
+                              <div class="review-block">
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+                                    <div class="review-block-name"><a href="#">nktailor</a></div>
+                                    <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <div class="review-block-rate">
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                    </div>
+                                    <div class="review-block-title">this was nice in buy</div>
+                                    <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+                                  </div>
+                                </div> <!-- row ends -->
+                                <hr/>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+                                    <div class="review-block-name"><a href="#">nktailor</a></div>
+                                    <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <div class="review-block-rate">
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                    </div>
+                                    <div class="review-block-title">this was nice in buy</div>
+                                    <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+                                  </div>
+                                </div> <!-- row ends -->
+                                <hr/>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+                                    <div class="review-block-name"><a href="#">nktailor</a></div>
+                                    <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <div class="review-block-rate">
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                      </button>
+                                    </div>
+                                    <div class="review-block-title">this was nice in buy</div>
+                                    <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+                                  </div>
+                                </div> <!-- row ends -->
+                              </div> <!-- review-block ends-->
+                            </div> <!-- col-7 ends -->
+                          </div> <!-- main row ends -->
+                    </div>
+                </div> <!-- tab content end -->
+            </div><!-- card end -->
+        </div> <!-- col ends-->
+    </div> <!-- row ends -->
+</div>
