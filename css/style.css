@@ -2141,4 +2141,9 @@ h4.itinerary_sub_title:before {
 	margin-bottom:10px;
 }
 .review-block-description{
-	font-size:13px;
+  font-size:13px;
+}
+img.img-rounded.review-image {
+  width: 60px;
+  height: auto;
+}
