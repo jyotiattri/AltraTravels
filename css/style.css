@@ -245,7 +245,7 @@ body{
 .home-upcommingtrek-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,.09);
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 17%);
     cursor: pointer;
     transition: .2s ease-in-out;
     overflow: hidden;
@@ -358,14 +358,15 @@ font-size: 14px;
     margin: 20px 0px;
 }
 .home-trekleader-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,.09);
-    cursor: pointer;
-    transition: .2s ease-in-out;
-    overflow: hidden;
-    min-height: 350px;
-    padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow:0 4px 10px 0 rgb(0 0 0 / 17%);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  overflow: hidden;
+  min-height: 350px;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 img.home-trekleader-image {
     width: 50%;
@@ -418,7 +419,7 @@ form.newsletter_frm {
 .home-testimonials-box {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,.09);
+    box-shadow:0 4px 10px 0 rgb(0 0 0 / 17%);
     cursor: pointer;
     transition: .2s ease-in-out;
     overflow: hidden;
