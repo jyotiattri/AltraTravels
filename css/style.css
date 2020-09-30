@@ -128,7 +128,7 @@ body{
     width: 30%;
 }
 .nav>li {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 .home-search input {
@@ -165,13 +165,13 @@ body{
 }
 .home-aboutus-text {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: #6e6d6d;
 }
 .altra-row-text {
     color: #6e6d6d;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
     margin-bottom: 40px;
@@ -221,19 +221,19 @@ body{
     margin-bottom: 20px;
 }
 .home-upcommingtrek-card-label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: #3d1a6f;
 }
 .home-upcommingtrek-card-title {
     color: #211f0a;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.4;
     margin: 10px 0;
 }
 .home-upcommingtrek-card-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.18;
     color: #6e6d6d;
     max-height: 120px;
@@ -267,7 +267,7 @@ body{
 }
 .featured-deals p {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 .deals-box{
     display: block;
@@ -408,14 +408,14 @@ form.newsletter_frm {
 }
 .numerical-rating {
     float: left;
-    width: 40%;
+    width: 38%;
     position: relative;
     bottom: 16px;
     color: #c6168d;
 }
 .stars-box.text-left {
     float: left;
-    width: 35%;
+    width: 38%;
 }
 .stars-outer {
     display: inline-block;
@@ -428,12 +428,12 @@ form.newsletter_frm {
 }
 .review-text {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
 }
 .home-testimonials-person-text {
-    font-style: italic;
-    color: #966BB6;
-    font-weight: lighter;
+  font-style: italic;
+  color: #401255;
+  font-size: 16px;
 }
 .home-testimonials-person-name {
     clear: both;
@@ -443,7 +443,7 @@ form.newsletter_frm {
 .home-testimonials-person-detail {
     padding: 0 10px 5px;
     line-height: 1.4;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     color: #6e6d6d;
 }
@@ -472,6 +472,7 @@ form.newsletter_frm {
     width: 100%;
     border: #bdbdbd;
     text-align: center;
+    font-size: 20px;
 }
 .home-search-detail h2 {
     font-size: 18px;
@@ -544,13 +545,15 @@ form.newsletter_frm {
     font-size: smaller;
     color: #6e6d6d;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 .tax-rates {
-    font-size: smaller;
+  font-size: 14px;
     color: #6e6d6d;
 }
 .price-rate {
     margin-bottom: 2px;
+    font-size: 16px;
 }
 .type-details li {
     margin: 10px 0px;
@@ -579,7 +582,7 @@ form.newsletter_frm {
     background: 0;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 700;
 }
@@ -600,7 +603,7 @@ form.newsletter_frm {
 .filter-category-title h3 {
     margin: 0;
     padding: 4px 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
 }
@@ -638,7 +641,7 @@ form.newsletter_frm {
 }
 .filter-item {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6em;
 }
 .filter-item:before {
@@ -689,6 +692,7 @@ form.newsletter_frm {
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
+    font-size: 16px;
 }
 .hastag li:nth-child(3n+2) a{
     background-color: #ede3f4;
@@ -696,6 +700,7 @@ form.newsletter_frm {
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
+    font-size: 16px;
 }
 .hastag li:nth-child(3n+3) a{
     background-color: #d7e3ee;
@@ -703,6 +708,7 @@ form.newsletter_frm {
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
+    font-size: 16px;
 }
 .hastag li {
     display: inline-block;
@@ -729,6 +735,7 @@ form.newsletter_frm {
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
+    font-size: 16px;
 }
 
 .search-rating h2 {
@@ -773,7 +780,7 @@ form.newsletter_frm {
      transition-property: color; 
     -webkit-transition-duration: 0.3s; 
      transition-duration: 0.3s;
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
     text-align: center;
     font-weight: bold;
@@ -784,7 +791,7 @@ form.newsletter_frm {
     background: #fff;
 }
 .see-more {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 .divider-text::before {
@@ -845,7 +852,7 @@ form.newsletter_frm {
 }
 .copyright {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     padding: 15px 0;
     color:#000;
 }
@@ -1000,14 +1007,14 @@ hr {
 }
   .off_detail {
     color: #3c3c3c;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 2px;
   }
   
   .off_detail a {
     color: #5C3973;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 2px;
   }
@@ -1101,7 +1108,7 @@ hr {
       display: flex;
   }
   .alert-area .nav>li {
-    padding: 0px 30px;
+    padding: 0px 26px;
 }
 .alert-area.grey {
     background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
@@ -1260,7 +1267,7 @@ h3.faq-section {
   input, select, textarea, button, div.button {
     border-radius: 0;
     color: #24272b;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     vertical-align: middle;
   } */
@@ -1357,7 +1364,7 @@ h3.faq-section {
   .MagicToolboxMessage {
     color: #444;
     font-family: Oswald Regular;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     margin: 5px 0 5px 25px;
   }
@@ -1458,7 +1465,7 @@ h3.faq-section {
   .ratings .rating-links a {
     color: #313131;
     font-family: Oswald Regular;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25px;
     text-decoration: none;
@@ -1498,7 +1505,7 @@ h3.faq-section {
     color: #d30000;
     float: left;
     font-family: Oswald Regular;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -1531,14 +1538,14 @@ h3.faq-section {
     color: #8c8c8c;
     display: inline-block;
     font-family: Oswald Regular;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     padding-right: 3px;
     text-align: left;
     text-transform: capitalize;
   }
   .price-shipping-info ul li span {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .pdp-regular-price {
@@ -1620,8 +1627,7 @@ h3.faq-section {
     box-shadow: 0 0 8px 0 rgb(156, 154, 156);
     color: #000;
     content: attr(data-sale-tooltip);
-    font-family: Oswald;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     left: 100%;
     line-height: 1.2;
@@ -1649,7 +1655,7 @@ h3.faq-section {
   .warrenty_include {
     color: #4b4b4b;
     font-family: Oswald Regular;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 0 !important;
     width: 70%;
@@ -1737,7 +1743,6 @@ h3.faq-section {
   
   .product_detail-tab li a {
     color: #1e1e1e;
-    font-family: Oswald;
     font-size: 20px;
     font-weight: 300;
     padding: 10px 30px;
@@ -1745,7 +1750,6 @@ h3.faq-section {
   }
   
   .product_deatil {
-    font-family: Calibri;
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -1757,8 +1761,7 @@ h3.faq-section {
     padding: 0px;
 }
   .more_det {
-    font-family: oswald;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
   }
   
@@ -1772,7 +1775,6 @@ h3.faq-section {
     color: #3e3e3e;
     cursor: pointer;
     display: block;
-    font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
     padding: 0 0 22px;
@@ -1808,7 +1810,6 @@ h3.faq-section {
   }
   
   .related {
-    font-family: oswald;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
@@ -1940,12 +1941,12 @@ h3.faq-section {
   }
   .collateral-tabs .tab-content {
     background: #fbfbfb none repeat scroll 0 0;
-    font-size: 12px;
+    font-size: 14px;
     padding: 20px;
   }
   .product-description .std {
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 15px;
   }
@@ -1964,7 +1965,7 @@ h3.faq-section {
     text-transform: uppercase;
   }
   .product-attributes .attribute-group ul li {
-    font-size: 12px;
+    font-size: 14px;
     list-style-image: url("../img/footer_list-1.png");
     margin-bottom: 8px;
     margin-left: 10px;
@@ -1973,7 +1974,7 @@ h3.faq-section {
   
   .product-attributes .attribute-group ul li label {
     color: #3b3b3b;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
   }
   /* toggle css */
@@ -2062,15 +2063,15 @@ ul.itinerary_list:not(.browser-default) {
 ul.itinerary_list h4.itinerary_sub_title {
     padding-left: 25px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
 }
 h4.itinerary_sub_title:before {
     content: "";
     background: #fff url(../img/sprite.png) no-repeat -68px -36px;
     position: absolute;
-    left: 37px;
-    font-size: 14px;
+    left: 27px;
+    font-size: 16px;
     width: 22px;
     height: 23px;
 }
@@ -2078,6 +2079,7 @@ h4.itinerary_sub_title:before {
     padding-left: 30px;
     color: #3b444e;
     margin-left: 15px;
+    font-size: 16px;
 }
 .itinerary_sub_title-data:before {
     content: "";
@@ -2091,25 +2093,28 @@ h4.itinerary_sub_title:before {
 .review-block{
 	padding:15px;
 }
+.text-right .fa.fa-star {
+  margin-left: 3px;
+}
 .review-block-name {
-  font-size: 14px;
+  font-size: 18px;
   margin: 10px 0;
   text-transform: capitalize;
 }
 .review-block-date{
-	font-size:12px;
+	font-size:14px;
 }
 .review-block-rate{
 	font-size:13px;
 	margin-bottom:15px;
 }
 .review-block-title{
-	font-size:15px;
+	font-size:18px;
 	font-weight:700;
 	margin-bottom:10px;
 }
 .review-block-description{
-  font-size:13px;
+  font-size:16px;
 }
 img.img-rounded.review-image {
   width: 60px;
