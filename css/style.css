@@ -1,68 +1,36 @@
-@font-face {
-    font-family: 'Garamond';
-    font-weight: bold;
-    font-style: normal;
-    src: url("../fonts/Garamond-Bold");
-    src:
-    url("../fonts/Garamond-Bold/Garamond-Bold.eot") format("eot"),
-    url("../fonts/Garamond-Bold/Garamond-Bold.svg#Garamond-Bold") format("svg"),
-    url("../fonts/Garamond-Bold/Garamond-Bold.ttf") format("truetype"),
-    url("../fonts/Garamond-Bold/Garamond-Bold.woff") format("woff"),
-    url("../fonts/Garamond-Bold/Garamond-Bold.woff2") format("woff2");
-    }
-        @font-face {
-            font-family: 'Garamond';
-            font-weight: normal;
-    font-style: italic;
-            src: url("../fonts/Garamond-Italic/Garamond-Italic.eot");
-            src:
-            url("../fonts/Garamond-Italic/Garamond-Italic.svg#Garamond-Italic") format("svg"),
-            url("../fonts/Garamond-Italic/Garamond-Italic.ttf") format("truetype"),
-            url("../fonts/Garamond-Italic/Garamond-Italic.woff") format("woff"),
-            url("../fonts/Garamond-Italic/Garamond-Italic.woff2") format("woff2");
-            }
-            @font-face {
-                font-family: 'Garamond';
-                font-weight: 500;
-                font-style: italic;
-                src: url("../fonts/Garamond-MediumItalic/Garamond-MediumItalic.eot");
-                src:
-                url("../fonts/Garamond-MediumItalic/Garamond-MediumItalic.svg#Garamond-MediumItalic") format("svg"),
-                url("../fonts/Garamond-MediumItalic/Garamond-MediumItalic.ttf") format("truetype"),
-                url("../fonts/Garamond-MediumItalic/Garamond-MediumItalic.woff") format("woff"),
-                url("../fonts/Garamond-MediumItalic/Garamond-MediumItalic.woff2") format("woff2");
-                }
-                @font-face {
-                    font-family: 'Garamond';
-                    font-weight: normal;
-                    font-style: normal;
-                    src: url("../fonts/Garamond-simple/Garamond.eot");
-                    src:
-                    url("../fonts/Garamond-simple/Garamond.svg#Garamond") format("svg"),
-                    url("../fonts/Garamond-simple/Garamond.ttf") format("truetype"),
-                    url("../fonts/Garamond-simple/Garamond.woff") format("woff"),
-                    url("../fonts/Garamond-simple/Garamond.woff2") format("woff2");
-                    }
-                    @font-face {
-                        font-family: 'Garamond';
-                        font-weight: normal;
-                font-style: italic;
-                        src: url("../fonts/Garamond-KursivHalbfett/Garamond-KursivHalbfett.eot");
-                        src: url("../fonts/Garamond-KursivHalbfett/Garamond-Italic.eot");
-                        src:
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-Italic.svg") format("svg"),
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-Italic.ttf") format("truetype"),
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-Italic.woff") format("woff"),
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-Italic.woff2") format("woff2");
-                        src:
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-KursivHalbfett.svg#Garamond-KursivHalbfett") format("svg"),
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-KursivHalbfett.ttf") format("truetype"),
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-KursivHalbfett.woff") format("woff"),
-                        url("../fonts/Garamond-KursivHalbfett/Garamond-KursivHalbfett.woff2") format("woff2");
-                        }                  
-/* body{
-    font-family: 'Garamond', Arial, Helvetica, sans-serif;
-} */
+                          @font-face {
+                          font-family: 'Athelas Regular';
+                          font-style: normal;
+                          font-weight: normal;
+                          src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
+                          }
+                          
+                          
+                          @font-face {
+                          font-family: 'Athelas Italic';
+                          font-style: normal;
+                          font-weight: normal;
+                          src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
+                          }
+                          
+                          
+                          @font-face {
+                          font-family: 'Athelas Bold';
+                          font-style: normal;
+                          font-weight: normal;
+                          src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
+                          }
+                          
+                          
+                          @font-face {
+                          font-family: 'Athelas Bold Italic';
+                          font-style: normal;
+                          font-weight: normal;
+                          src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
+                          }
+body{
+    font-family: 'Athelas Regular';
+} 
 .grey {
     background: #e9e8e8;
 }
@@ -2050,7 +2018,7 @@ h3.faq-section {
 }
 
 .parrent .tab-nav>li>a::after {
-    background: ##5a4080 none repeat scroll 0% 0%;
+    background: #5a4080 none repeat scroll 0% 0%;
     color: #fff;
 }
 
