@@ -110,15 +110,119 @@ body{
 .top-header {
     min-height: 50px;   
 }
-.hero-section {
-    padding-top: 20px;
-}
-.header-logo {
-  background: url(../img/logo-bg.png);
+.header-bg {
+  background: url(../img/altra-logo.png);
   background-size: cover;
   background-position: center;
   padding-bottom: 30px;
+  min-height: 400px;
 }
+/* new header */
+.header-logo .logo {
+  position: fixed;
+  margin: 16px 46px;
+}
+
+.header-logo nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  background: rgb(131 130 134 / 10%);
+  z-index: 99999;
+}
+
+.header-logo nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+.header-logo nav.black ul {
+  background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
+  box-shadow: 0 6px 9px -6px #401255;
+}
+.header-logo nav.black ul li a{
+  color: #fff;
+}
+.header-logo nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+.header-logo nav ul li a {
+  text-decoration: none;
+  color: #4B0C61;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-logo .menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media(max-width: 786px) {
+
+  .header-logo .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  }
+
+  .header-logo nav ul {
+        max-height: 0px;
+        background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
+  }
+
+  .header-logo nav.black ul {
+    background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
+  }
+
+  .header-logo .showing {
+        max-height: 34em;
+  }
+
+  .header-logo nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+  }
+  .header-logo nav ul li a {
+    color: #fff;
+  }
+
+  .header-logo .menu-icon {
+        display: block;
+  }
+
+}
+
+.other-logo {
+  background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
+  box-shadow: 0 6px 9px -6px #401255;
+  min-height: 94px;
+}
+.other-logo nav ul li a {
+  color: #fff;
+}
+
+/* new header ends */
+
 .navbar {
     margin-bottom: 0px;
 }
@@ -900,11 +1004,13 @@ form.newsletter_frm {
 hr {
     border-top: 1px solid #4a235e;
 }
-/* .hero-section{
-    background: url(../img/hero-1.jpg);
+.hero-section{
+    background: url(../img/search-bg.jpg);
     background-position: center;
     background-size: cover;
-} */
+    background-attachment: fixed;
+    padding: 20px 0px;
+}
 #home_search {
     border: 1px solid #bdbdbd;
     vertical-align: top;
@@ -919,6 +1025,7 @@ hr {
 }
 .hero-section h2 {
     font-weight: bold;
+    color: #fff;
 }
 .home-search form {
     padding-top: 50px;
@@ -1134,24 +1241,7 @@ hr {
       background: url(../img/header.png);
       background-size: cover;
   }
-  .logo {
-    text-align: center;
-    width: 45%;
-    margin: 0 auto;
-}
-  .alert-area nav{
-      display: flex;
-  }
-  .alert-area .nav>li {
-    padding: 0px 26px;
-}
-.alert-area.grey {
-    background-image: linear-gradient(to left, #F37B4E, #DF6275, #B15C8E,#785B8F, #46557A, #2F4858);
-    box-shadow: 0 6px 9px -6px #401255;
-    /* border-bottom: 2px solid #ffcb08; */
-    padding: 15px 0px;
-    min-height: 70px;
-}
+  
 /* .hero-section {
     min-height: 100px;
     padding: 30px;
