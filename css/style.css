@@ -1005,10 +1005,7 @@ hr {
     border-top: 1px solid #4a235e;
 }
 .hero-section{
-    background: url(../img/search-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url(../img/textured-bg.jpg) repeat;
     padding: 20px 0px;
 }
 #home_search {
@@ -1025,7 +1022,6 @@ hr {
 }
 .hero-section h2 {
     font-weight: bold;
-    color: #fff;
 }
 .home-search form {
     padding-top: 50px;
