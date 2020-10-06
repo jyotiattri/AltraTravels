@@ -380,8 +380,8 @@ form.newsletter_frm {
 .newsletter-box .altra-row-text {
     color: #fff;
 }
-.home-testimonials {
-  padding-bottom: 25px;
+..home-testimonials.home-margin{
+  padding-bottom: 60px;
 }
 .home-testimonials-box {
     background-color: #fff;
@@ -391,6 +391,7 @@ form.newsletter_frm {
     transition: .2s ease-in-out;
     overflow: hidden;
     min-height: 450px;
+    margin-bottom: 40px;
 }
 .home-testimonials-img {
     height: 250px;
@@ -853,6 +854,10 @@ form.newsletter_frm {
 }
 .home-blog-image-5 {
   background-image: url(../img/mukta-trek.jpg);
+}
+.home-margin {
+  margin: 0px 0px 20px;
+  padding: 20px 0px 25px;
 }
 
 .footer {
