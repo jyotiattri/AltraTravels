@@ -33,7 +33,7 @@
                               <i class="fa fa-bars fa-2x"></i>
                            </div>
                            <div class="logo">
-                            <a href="index.html"><img src="img/text-logo.png" class="text-logo img-responsive" alt="altra travels"/></a>
+                            <a href="index.html"><img src="img/text.png" class="text-logo img-responsive" alt="altra travels"/></a>
                            </div>
                            <div class="menu">
                               <ul>
@@ -735,6 +735,19 @@
                   $('nav').removeClass('black');
             }
       })
+
+// image change effect
+
+      $(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) { 
+            $('.header-bg .logo img').attr('src','img/text-logo.png');
+        }
+        if ($(this).scrollTop() < 10) { 
+            $('.header-bg .logo img').attr('src','img/text.png');
+        }
+    })
+});
                 </script>
 </body>
 
