@@ -84,6 +84,10 @@ p{
 .clear{
     clear: both;
 }
+input:focus {
+  outline-offset: 0px;
+  outline: none;
+}
 a{
     text-decoration: none !important;
     color: #211f0a;
@@ -994,6 +998,7 @@ form.newsletter_frm {
 .home-featured-deals-title {
     font-size: 22px;
     font-weight: bold;
+    color:#fff;
 }
 .home-blog-box {
     display: block;
