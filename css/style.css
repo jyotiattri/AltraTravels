@@ -1100,7 +1100,7 @@ form.newsletter_frm {
     color: #fff;
     font-style: italic;
 }
-hr {
+.footer hr {
     border-top: 1px solid #4a235e;
 }
 .hero-section .altra-row-title span {
@@ -2574,15 +2574,9 @@ background-color: #f8f8f8;
 border-left: 0;
 border-right: 0;
 }
-.panel-heading + .panel-menu,
-.panel-menu + .panel-body,
-.panel-body + .panel-menu,
-.panel-body + .panel-body {
-border-top: 0;
-}
 .panel-body {
 position: relative;
-padding: 2px 15px;
+padding: 15px;
 border: 1px solid #e2e2e2;
 }
 .panel-body + .panel-footer {
@@ -2907,6 +2901,8 @@ list-style: none;
 }
 .panel-body h3 {
   font-weight: bold;
+  color: #5C3973;
+  font-size: 18px;
 }
 .list_trek .attribute-list li {
   font-size: 14px;
@@ -2929,4 +2925,55 @@ list-style: none;
 .media-body.va-m.profile-info {
   padding-top: 30px;
   padding-left: 30px;
+}
+.profile_age, .lang_knw, .profile-experince {
+  color: #5d5c5c;
+  font-size: 16px;
+}
+.commentList {
+  padding:0;
+  list-style:none;
+  max-height:200px;
+  overflow:auto;
+}
+.commentList li {
+  margin: 0;
+  margin-top: 10px;
+  border-top: 1px dotted #bbb;
+  padding: 5px;
+}
+.commentList li:first-child {
+  border-top: none;
+}
+.commentList li > div {
+  display:table-cell;
+}
+.commenterImage {
+  width:30px;
+  margin-right:5px;
+  height:100%;
+  float:left;
+}
+.commenterImage img {
+  width:100%;
+  border-radius:50%;
+}
+.commentText p {
+  margin:0;
+}
+.sub-text {
+  color:#aaa;
+  font-family:verdana;
+  font-size:11px;
+}
+.actionBox {
+  padding:5px;
+}
+
+.pb-cmnt-textarea {
+  resize: none;
+  padding: 20px;
+  height: 130px;
+  width: 100%;
+  border: 1px solid #F2F2F2;
 }
