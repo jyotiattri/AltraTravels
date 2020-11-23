@@ -2582,7 +2582,7 @@ border-top: 0;
 }
 .panel-body {
 position: relative;
-padding: 15px;
+padding: 2px 15px;
 border: 1px solid #e2e2e2;
 }
 .panel-body + .panel-footer {
@@ -2907,7 +2907,6 @@ list-style: none;
 }
 .panel-body h3 {
   font-weight: bold;
-  margin-bottom: 20px;
 }
 .list_trek .attribute-list li {
   font-size: 14px;
@@ -2918,4 +2917,16 @@ list-style: none;
 }
 .rating-block {
   margin-bottom: 9px;
+}
+.panel-body .hastag
+{
+  padding: 0px;
+}
+.designation {
+  font-size: 18px;
+  color:#5C3973;
+}
+.media-body.va-m.profile-info {
+  padding-top: 30px;
+  padding-left: 30px;
 }
