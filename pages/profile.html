@@ -108,6 +108,14 @@
                             <li><a href="#">Triund Trek</a></li>
                           </ul>
                         </div>
+
+                        <button type="button" 
+        id="testBtn" 
+        class="btn btn-success fa fa-thumbs-up" 
+        data-loading-text=" ... ">
+    4</button>
+<button type="button" id="testBtnDown" class="btn btn-success fa fa-thumbs-down" data-loading-text=" ... ">
+    4</button>
                             </div><!-- col ends -->
                           </div>
 
@@ -305,6 +313,31 @@
                       $('nav').removeClass('black');
                 }
           })
+
+          // Is this helpful button
+          $('#testBtn').click(function () {
+    var cnt=4;
+    var btn = $(this);
+    btn.button('loading');
+    setTimeout(function () {
+        cnt++;
+        btn.button('reset');
+        btn.text('  ' + cnt);
+    }, 1000);
+ });
+
+$('#testBtnDown').click(function () {
+    var cnt=4;
+    var btn = $(this);
+    btn.button('loading');
+    setTimeout(function () {
+        if (cnt > 0) {
+            cnt--;
+        }
+        btn.button('reset');
+        btn.text('  ' + cnt);
+    }, 1000);
+ });
                                 </script>
                 </body>
                 
