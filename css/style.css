@@ -2969,11 +2969,16 @@ list-style: none;
 .actionBox {
   padding:5px;
 }
-
 .pb-cmnt-textarea {
   resize: none;
   padding: 20px;
   height: 130px;
   width: 100%;
   border: 1px solid #F2F2F2;
+}
+.panel{
+margin-top: 20px;
+}
+.panel p {
+  font-weight: normal;
 }
