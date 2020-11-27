@@ -2920,7 +2920,8 @@ list-style: none;
 }
 .designation {
   font-size: 18px;
-  color:#5C3973;
+  color: #5C3973;
+  font-weight: normal;
 }
 .media-body.va-m.profile-info {
   padding-top: 30px;
@@ -2981,4 +2982,58 @@ margin-top: 20px;
 }
 .panel p {
   font-weight: normal;
+}
+/* new profile */
+.aqua-gradient {
+  height: 200px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(233, 242, 233, 0.9878326330532213) 0%, rgba(0, 212, 255, 1) 51%, rgba(114, 156, 7, 1) 93%);
+}
+
+.profile_image {
+  margin-top: -105px;
+  border-radius: 50%;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.avatar-container {
+  border: 1px solid #e2e2e2;
+  border-radius: 0px;
+}
+.avatar-pic {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+}
+.profile-page .hastag {
+  padding-top: 0px;
+}
+.profile-page .hastag li a{
+  font-weight: normal;
+}
+form.question_panel {
+  padding: 20px 10px;
+}
+label.radio-inline {
+  color: #211f0a;
+}
+.profile-page .home-upcommingtrek-image {
+  height: 200px;
+  width: auto;
+}
+.profile-page .home-upcommingtrek-card {
+  min-height: 370px;
+}
+.profile-featured{
+  clear: both;
+}
+.slider-arrows {
+  float: right;
+  min-height: 50px;
+}
+.left-arrow {
+  font-size: 40px;
+  color: #4a235e;
+  font-weight: bold;
+  padding: 5px;
 }
