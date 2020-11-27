@@ -3037,3 +3037,11 @@ label.radio-inline {
   font-weight: bold;
   padding: 5px;
 }
+.average-number {
+  color: #5C3973;
+  font-weight: bold;
+}
+.average-number small {
+  color: #5C3973;
+  font-weight: bold;
+}
