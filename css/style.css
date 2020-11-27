@@ -3045,3 +3045,12 @@ label.radio-inline {
   color: #5C3973;
   font-weight: bold;
 }
+.profile-page .home-upcommingtrek-card-label {
+  font-size: 20px;
+}
+.profile-page #upcoming-trek-button {
+  font-size: 16px;
+}
+.profile-page {
+  margin-bottom: 50px;
+}
