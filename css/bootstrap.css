@@ -5432,7 +5432,7 @@ a.thumbnail:hover {
   zoom: 1;
 }
 .media-body {
-  width: 10000px;
+  width: auto;
 }
 .media-object {
   display: block;
