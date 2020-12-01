@@ -3653,3 +3653,20 @@ background-color: #f37b4e;
 .profile-work .hastag {
   padding-top: 0px;
 }
+/*********************
+****My Treks page css*****
+**********************/
+.my-treks-list {
+  clear: both;
+  text-align: right;
+}
+.my-treks-list li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.my-treks-list li a{
+  color: #5C3973;
+}
