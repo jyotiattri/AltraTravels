@@ -3064,6 +3064,13 @@ label.radio-inline {
 .dropdown.open a {
   margin-right: 0px;
 }
+.dropdown-item {
+  font-size: 14px;
+  line-height: 3.5rem;
+}
+.dropdown .dropdown-menu a {
+ font-size: 14px;
+}
 
 /*********************
 ****blog page css*****
@@ -3260,10 +3267,6 @@ ul.faq li > div h3 {
 
 .blog .blog-item .blog-content h4 {
   font-size: 14px;
-}
-
-.post-tags {
-
 }
 
 .blog .blog-item .entry-meta {
