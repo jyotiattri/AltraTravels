@@ -3567,6 +3567,13 @@ background-color: #f37b4e;
 .likes_not {
   margin-top: 20px;
 }
+.trek-status {
+  font-size: 18px;
+  font-weight: bold;
+}
+.trek-status span{
+  color: #5C3973;
+}
 /*********************
 ****My details page css*****
 **********************/
