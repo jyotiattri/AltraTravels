@@ -3564,6 +3564,9 @@ section#blog {
 background-color: #f37b4e;
  border-color: #f37b4e;
 }
+.likes_not {
+  margin-top: 20px;
+}
 /*********************
 ****My details page css*****
 **********************/
