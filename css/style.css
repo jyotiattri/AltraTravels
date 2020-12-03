@@ -3681,13 +3681,42 @@ background-color: #f37b4e;
   color: #5C3973;
 }
 .my-treks .search-deal-image img {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 .my-treks .search-deal-details {
-  width: 70%;
+  width: 63%;
 }
-
+.my-treks .search-list-title {
+  margin-top: 2px;
+  font-size: 24px;
+}
+.my-treks .search-featured-deals-title {
+  font-size: 20px;
+}
+/* sidebar */
+.about_sidebar {
+  border: 1px solid #bdbdbd;
+  padding: 10px;
+  border-radius: 3px;
+}
+.sidebar_logo {
+  width: 80%;
+  margin: 0 auto;
+}
+.about_sidebar ul {
+  padding: 18px;
+}
+.about_sidebar li {
+  list-style-image: url(../img/footer_list-1.png);
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+.about_sidebar h3 {
+  color: #5C3973;
+  font-size: 22px;
+  font-weight: bold;
+}
 /*********************
 ****Order details page css*****
 **********************/
@@ -3718,10 +3747,7 @@ background-color: #f37b4e;
   width: 12%;
   text-align: right;
 }
-
- 
-/* Apply clearfix in a few places */
-/* Apply dollar signs */
+/* Apply Rs signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
   content: 'Rs ';
 }
@@ -3888,4 +3914,20 @@ background-color: #f37b4e;
   .totals .totals-item .totals-value {
     width: 40%;
   }
+}
+/*********************
+****Rate My experience page css*****
+**********************/
+#hearts { color: #ee8b2d;}
+#hearts-existing { color: #ee8b2d;}
+.rate-experience .stars
+{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #ee8b2d;
+}
+.animated {
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s;
 }
