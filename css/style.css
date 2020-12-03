@@ -3919,18 +3919,15 @@ background-color: #f37b4e;
 /*********************
 ****Rate My experience page css*****
 **********************/
-#hearts { color: #ee8b2d;}
-#hearts-existing { color: #ee8b2d;}
-.rate-experience .stars
+.rate-experience .fa-star
 {
-    margin: 20px 0;
-    font-size: 24px;
-    color: #ee8b2d;
+    color:#fe4902;
 }
-.animated {
-  -webkit-transition: height 0.2s;
-  -moz-transition: height 0.2s;
-  transition: height 0.2s;
+.review-btn {
+  float: right;
+}
+.review-btn:hover {
+color: #FFF;
 }
 /*********************
 ****order page css*****
