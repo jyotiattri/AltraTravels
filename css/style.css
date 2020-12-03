@@ -2379,7 +2379,7 @@ img.img-rounded.review-image {
   width: auto;
 }
 .trek-box-item-detail {
-  padding-left: 10px;
+  padding-left: 5px;
   font-size: 14px;
 }
 
@@ -3685,7 +3685,7 @@ background-color: #f37b4e;
   height: auto;
 }
 .my-treks .search-deal-details {
-  width: 63%;
+  width: 76%;
 }
 .my-treks .search-list-title {
   margin-top: 2px;
@@ -3716,6 +3716,7 @@ background-color: #f37b4e;
   color: #5C3973;
   font-size: 22px;
   font-weight: bold;
+  padding-left: 10px;
 }
 /*********************
 ****Order details page css*****
@@ -3930,4 +3931,138 @@ background-color: #f37b4e;
   -webkit-transition: height 0.2s;
   -moz-transition: height 0.2s;
   transition: height 0.2s;
+}
+/*********************
+****order page css*****
+**********************/
+.steps .step {
+  display: block;
+  width: 100%;
+  margin-bottom: 35px;
+  text-align: center
+}
+.steps{
+display: flex;
+}
+.my-orders .btn.button-color:hover {
+  color: #fff;
+}
+.steps .step .step-icon-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  text-align: center
+}
+
+.steps .step .step-icon-wrap::before,
+.steps .step .step-icon-wrap::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 3px;
+  margin-top: -1px;
+  background-color: #e1e7ec;
+  content: '';
+  z-index: 1
+}
+
+.steps .step .step-icon-wrap::before {
+  left: 0
+}
+
+.steps .step .step-icon-wrap::after {
+  right: 0
+}
+
+.steps .step .step-icon {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e1e7ec;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #374250;
+  font-size: 38px;
+  line-height: 81px;
+  z-index: 5
+}
+
+.steps .step .step-title {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: #606975;
+  font-size: 14px;
+  font-weight: 500
+}
+
+.steps .step:first-child .step-icon-wrap::before {
+  display: none
+}
+
+.steps .step:last-child .step-icon-wrap::after {
+  display: none
+}
+
+.steps .step.completed .step-icon-wrap::before,
+.steps .step.completed .step-icon-wrap::after {
+  background-color: #0da9ef
+}
+
+.steps .step.completed .step-icon {
+  border-color: #0da9ef;
+  background-color: #0da9ef;
+  color: #fff
+}
+.my-orders .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+.my-orders .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+@media (max-width: 576px) {
+  .flex-sm-nowrap .step .step-icon-wrap::before,
+  .flex-sm-nowrap .step .step-icon-wrap::after {
+      display: none
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-md-nowrap .step .step-icon-wrap::before,
+  .flex-md-nowrap .step .step-icon-wrap::after {
+      display: none
+  }
+}
+
+@media (max-width: 991px) {
+  .flex-lg-nowrap .step .step-icon-wrap::before,
+  .flex-lg-nowrap .step .step-icon-wrap::after {
+      display: none
+  }
+}
+
+@media (max-width: 1200px) {
+  .flex-xl-nowrap .step .step-icon-wrap::before,
+  .flex-xl-nowrap .step .step-icon-wrap::after {
+      display: none
+  }
+}
+
+.bg-faded, .bg-secondary {
+  background-color: #f5f5f5 !important;
 }
