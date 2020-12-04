@@ -79,7 +79,8 @@ p{
     color: #fff;
 }
 .button-color:hover {
-    background: #603874fc;
+  background: #603874fc;
+  color: #fff !important;
 }
 .clear{
     clear: both;
@@ -3748,6 +3749,9 @@ background-color: #f37b4e;
   width: 12%;
   text-align: right;
 }
+.shopping-cart {
+  padding-top: 15px;
+}
 /* Apply Rs signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
   content: 'Rs ';
@@ -3834,7 +3838,6 @@ background-color: #f37b4e;
   background-color: #4a235e;
   color: #fff;
   font-size: 25px;
-  border-radius: 3px;
 }
  
 .checkout:hover {
@@ -3928,6 +3931,14 @@ background-color: #f37b4e;
 }
 .review-btn:hover {
 color: #FFF;
+}
+.rate-experience p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.rate-experience h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 /*********************
 ****order page css*****
@@ -4063,3 +4074,140 @@ display: flex;
 .bg-faded, .bg-secondary {
   background-color: #f5f5f5 !important;
 }
+/*********************
+****Terms and conditions page css*****
+**********************/
+/* .terms-conditions li {
+  list-style-type: decimal;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+.terms-conditions .checkbox{
+  float: right;
+}
+.next_btn.button-color {
+  padding: 8px 30px;
+  border: none;
+  float: right;
+  clear: both;
+  font-size: 20px;
+} */
+
+
+/*********************
+****Payment page css*****
+**********************/
+.payment-page .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.payment-page .card-header {
+  padding: 25px;
+  background: #F5F5F5;
+}
+.payment-page .card_link {
+  background-color: #fff!important;
+}
+.final-payment .nav>li {
+  font-size: 20px;
+  font-weight: normal;
+  width: 33%;
+  text-align: center;
+}
+.final-payment .nav-tabs>li.active>a, .final-payment .nav-tabs>li>a:hover {
+  border: none;
+  color: #5a4080 !important;
+  background: #fff;
+}
+.final-payment .nav-pills > li.active > a, .final-payment .nav-pills > li.active > a:focus, .final-payment .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #4a235e !important;;
+}
+.final-payment .nav-pills > li > a {
+  color:  #4a235e;
+  background-color: #fff;
+}
+#credit-card {
+  margin-top: 10px;
+}
+.final-payment .form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  box-shadow: none;
+}
+.final-payment .input-group-append {
+  margin-left: -1px;
+}
+.final-payment .input-group-append, .final-payment .input-group-prepend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.final-payment .input-group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+.final-payment .input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+.final-payment .input-group>.custom-file, .final-payment .input-group>.custom-select, .final-payment .input-group>.form-control {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+.visa-card{
+  margin-left: .25rem!important;
+}
+.card-header h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
