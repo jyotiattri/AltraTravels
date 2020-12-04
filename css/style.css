@@ -4016,12 +4016,12 @@ display: flex;
 
 .steps .step.completed .step-icon-wrap::before,
 .steps .step.completed .step-icon-wrap::after {
-  background-color: #0da9ef
+  background-color: #966BB6;
 }
 
 .steps .step.completed .step-icon {
-  border-color: #0da9ef;
-  background-color: #0da9ef;
+  border-color: #966BB6;
+  background-color:#966BB6;
   color: #fff
 }
 .my-orders .card {
@@ -4113,11 +4113,11 @@ display: flex;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
-.payment-page .card-header {
+.final-payment .card-header {
   padding: 25px;
   background: #F5F5F5;
 }
-.payment-page .card_link {
+.final-payment .card_link {
   background-color: #fff!important;
 }
 .final-payment .nav>li {
