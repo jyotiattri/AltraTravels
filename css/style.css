@@ -4164,6 +4164,9 @@ display: flex;
   display: -ms-flexbox;
   display: flex;
 }
+#paytm {
+  margin-top: 20px;
+}
 .final-payment .input-group-text {
   display: -webkit-box;
   display: -ms-flexbox;
