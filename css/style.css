@@ -3922,9 +3922,10 @@ background-color: #f37b4e;
 /*********************
 ****Rate My experience page css*****
 **********************/
-.rate-experience .fa-star
-{
-    color:#fe4902;
+.rate-experience .fa-star {
+  color: #fe4902;
+  font-size: 18px;
+  margin: 10px 0px;
 }
 .review-btn {
   float: right;
@@ -3934,11 +3935,15 @@ color: #FFF;
 }
 .rate-experience p {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin: 5px 0px;
 }
-.rate-experience h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
+.rate-experience .row:nth-child(even) {
+  background: #f1eeee none repeat scroll 0 0;
+  border-bottom: 2px solid #a59f9f;
+  padding: 10px;
+}
+.rate-experience .row:nth-child(odd) {
+  padding: 10px;
 }
 /*********************
 ****order page css*****
@@ -3948,6 +3953,11 @@ color: #FFF;
   width: 100%;
   margin-bottom: 35px;
   text-align: center
+}
+.next_btn {
+  border: none;
+  padding: 5px 20px;
+  font-size: 20px;
 }
 .steps{
 display: flex;
