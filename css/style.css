@@ -3788,6 +3788,7 @@ background-color: #f37b4e;
 .product .product-details .product-description {
   margin: 5px 20px 5px 0;
   line-height: 1.4em;
+  font-weight: normal;
 }
 .product .product-quantity input {
   width: 40px;
@@ -4223,4 +4224,46 @@ display: flex;
   font-size: 16px;
   font-weight: bold;
 }
-
+/*********************
+****Acknowlwdgment page css*****
+**********************/
+.invoice h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a235e;
+}
+.invoice h5 {
+  font-size: 22px;
+  margin: 25px 0px 10px;
+  color: #4a235e;
+}
+.acknowledgment-page .product-image {
+  float: left;
+  width: 25%;
+}
+ 
+.acknowledgment-page .product-details {
+  float: left;
+  width: 63%;
+}
+ 
+.acknowledgment-page .product-price {
+  float: left;
+  width: 12%;
+}
+.footer-ack {
+  background: #e9e7e7;
+  padding: 10px;
+}
+.invoice p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.invoice .team-name {
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.footer-ack a {
+  text-decoration: underline !important;
+}
