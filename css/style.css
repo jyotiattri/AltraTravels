@@ -4178,6 +4178,10 @@ display: flex;
 #paytm {
   margin-top: 20px;
 }
+.payment-page {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
 .final-payment .input-group-text {
   display: -webkit-box;
   display: -ms-flexbox;
