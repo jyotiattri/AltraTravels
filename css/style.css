@@ -3925,8 +3925,9 @@ background-color: #f37b4e;
 **********************/
 .rate-experience .fa-star {
   color: #fe4902;
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0px;
+  float: right;
 }
 .review-btn {
   float: right;
@@ -3935,15 +3936,15 @@ background-color: #f37b4e;
 color: #FFF;
 }
 .rate-experience p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px 0px;
 }
-.rate-experience .row:nth-child(even) {
+.rate-experience .row:nth-child(odd) {
   background: #f1eeee none repeat scroll 0 0;
   border-bottom: 2px solid #a59f9f;
   padding: 10px;
 }
-.rate-experience .row:nth-child(odd) {
+.rate-experience .row:nth-child(even) {
   padding: 10px;
 }
 /*********************
@@ -4269,5 +4270,20 @@ display: flex;
   margin-bottom: 25px;
 }
 .footer-ack a {
+  text-decoration: underline !important;
+}
+.acknowledgment-page .sidebar {
+  border: 1px solid #e9e7e7;
+  padding: 20px;
+  margin-top: 21px;
+}
+.acknowledgment-page .sidebar li {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.acknowledgment-page .sidebar li a {
+  color: #4a235e;
   text-decoration: underline !important;
 }
