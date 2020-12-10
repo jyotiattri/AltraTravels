@@ -1314,12 +1314,11 @@ form.newsletter_frm {
     box-shadow: none;
 }
   .submit_btn_contact {
-    border-radius: 0;
     font-size: 20px;
     padding: 10px 45px;
     text-transform: uppercase;
     transition: all 0.8s ease 0s;;
-}
+}#logreg-forms a
   
   .contct_btn {
     margin: 0 auto;
@@ -2448,7 +2447,7 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 #logreg-forms a{
   display: block;
   padding-top:10px;
-  color:lightseagreen;
+  color:#4a235e;
 }
 
 #logreg-form .lines{
@@ -3926,7 +3925,7 @@ background-color: #f37b4e;
 .rate-experience .fa-star {
   color: #fe4902;
   font-size: 16px;
-  margin: 10px 0px;
+  margin: 9px 0px;
   float: left;
 }
 .review-btn {
@@ -3939,13 +3938,20 @@ color: #FFF;
   font-size: 16px;
   margin: 5px 0px;
 }
-.rate-experience .row:nth-child(odd) {
-  background: #f1eeee none repeat scroll 0 0;
-  border-bottom: 2px solid #a59f9f;
+.rate-experience .row {
+  /* background: #f1eeee none repeat scroll 0 0; */
+  border-bottom: 1px solid #e2e2e2;
   padding: 10px;
 }
-.rate-experience .row:nth-child(even) {
-  padding: 10px;
+.rate-experience .row:first-child, .rate-experience .row:last-child {
+  border-bottom: none;
+}
+.overall-rate h3{
+  font-size: 22px;
+  font-weight: bold;
+}
+.overall-rate .text-warning {
+  margin-top: 15px;
 }
 /*********************
 ****order page css*****
@@ -4035,25 +4041,6 @@ display: flex;
   border-color: #966BB6;
   background-color:#966BB6;
   color: #fff
-}
-.my-orders .card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
-}
-.my-orders .card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 1.25rem;
 }
 @media (max-width: 576px) {
   .flex-sm-nowrap .step .step-icon-wrap::before,
@@ -4286,4 +4273,15 @@ display: flex;
 .acknowledgment-page .sidebar li a {
   color: #4a235e;
   text-decoration: underline !important;
+}
+
+/*********************
+****customer details page css*****
+**********************/
+.customer-details .manage_book {
+  display: block;
+  width: 60%;
+  padding: 12px;
+  margin: 20px;
+  font-size: 18px;
 }
