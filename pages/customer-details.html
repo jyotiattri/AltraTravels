@@ -66,14 +66,14 @@
                                   <div class="step-icon-wrap">
                                     <div class="step-icon"><i class="fa fa-sign-in"></i></div>
                                   </div>
-                                  <h4 class="step-title">Order Details</h4>
+                                  <h4 class="step-title">Order Details & Payment</h4>
                                 </div>
-                                <div class="step">
+                                <!-- <div class="step">
                                   <div class="step-icon-wrap">
                                     <div class="step-icon"><i class="fa fa-first-order"></i></div>
                                   </div>
                                   <h4 class="step-title">Payment</h4>
-                                </div>
+                                </div> -->
                                 <div class="step">
                                   <div class="step-icon-wrap">
                                     <div class="step-icon"><i class="fa fa-address-book"></i></div>
@@ -83,7 +83,17 @@
                               </div>
                             </div>
                           </div>
-
+<div class="question-details">
+                          <p>Are you Primary participant?</p>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">No
+    </label>
+  </form>
+</div>
                           <div class="row">
                               <div class="col-lg-6 col-sm-12 col-md-12">
                                 <div class="panel">
@@ -125,6 +135,21 @@
                                                   <input type="text" class="form-control" id="gender" placeholder="Male" name="gender">
                                                 </div>
                                               </div>   
+                                              <fieldset class="scheduler-border">
+                                                <legend class="scheduler-border">Alternate Details :</legend>
+                                                <div class="col-md-4 mb-3">
+                                                  <label for="validationDefault01">Name</label>
+                                                  <input type="text" class="form-control" id="alter-name" placeholder="Suresh" name="alt-name">
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                  <label for="validationDefault02">Relation</label>
+                                                  <input type="text" class="form-control" id="alter-relation" placeholder="Brother" name="alt-relation">
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                  <label for="validationDefault02">Contact No</label>
+                                                  <input type="text" class="form-control" id="alter-contact" placeholder="2345678922" name="alt-contact">
+                                                </div>
+                                              </fieldset>
                                             <!-- <div class="form-group">        
                                               <div class="col-sm-offset-2 col-sm-4">
                                                 <button type="submit" class="btn button-color ">Update Details</button>

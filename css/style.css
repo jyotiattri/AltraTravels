@@ -4061,36 +4061,36 @@ color: #FFF;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
-.final-payment .card-header {
+.payment-page .card-header {
   padding: 25px;
   background: #F5F5F5;
 }
-.final-payment .card_link {
+.payment-page .card_link {
   background-color: #fff!important;
 }
-.final-payment .nav>li {
+.payment-page .nav>li {
   font-size: 20px;
   font-weight: normal;
   width: 33%;
   text-align: center;
 }
-.final-payment .nav-tabs>li.active>a, .final-payment .nav-tabs>li>a:hover {
+.payment-page .nav-tabs>li.active>a, .payment-page .nav-tabs>li>a:hover {
   border: none;
   color: #5a4080 !important;
   background: #fff;
 }
-.final-payment .nav-pills > li.active > a, .final-payment .nav-pills > li.active > a:focus, .final-payment .nav-pills > li.active > a:hover {
+.payment-page .nav-pills > li.active > a, .payment-page .nav-pills > li.active > a:focus, .payment-page .nav-pills > li.active > a:hover {
   color: #fff;
   background-color: #4a235e !important;;
 }
-.final-payment .nav-pills > li > a {
+.payment-page .nav-pills > li > a {
   color:  #4a235e;
   background-color: #fff;
 }
 #credit-card {
   margin-top: 10px;
 }
-.final-payment .form-control {
+.payment-page .form-control {
   display: block;
   width: 100%;
   padding: .375rem .75rem;
@@ -4104,10 +4104,10 @@ color: #FFF;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   box-shadow: none;
 }
-.final-payment .input-group-append {
+.payment-page .input-group-append {
   margin-left: -1px;
 }
-.final-payment .input-group-append, .final-payment .input-group-prepend {
+.payment-page .input-group-append, .payment-page .input-group-prepend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4119,7 +4119,7 @@ color: #FFF;
   margin-top: 25px;
   margin-bottom: 20px;
 }
-.final-payment .input-group-text {
+.payment-page .input-group-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4138,7 +4138,7 @@ color: #FFF;
   border: 1px solid #ced4da;
   border-radius: .25rem;
 }
-.final-payment .input-group {
+.payment-page .input-group {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4150,7 +4150,7 @@ color: #FFF;
   align-items: stretch;
   width: 100%;
 }
-.final-payment .input-group>.custom-file, .final-payment .input-group>.custom-select, .final-payment .input-group>.form-control {
+.payment-page .input-group>.custom-file, .payment-page .input-group>.custom-select, .payment-page .input-group>.form-control {
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -4244,4 +4244,26 @@ color: #FFF;
 .next_btn.btn.button-color {
   float: right;
 }
+.question-details p {
+  font-size: 18px;
+  font-weight: bold;
+  color:#5C3973;
+}
 
+fieldset.scheduler-border {
+  border: 1px solid #e2e2e2 !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  0px 0px 0px 0px #000;
+}
+
+  legend.scheduler-border {
+      font-size: 1.2em !important;
+      font-weight: bold !important;
+      text-align: left !important;
+      width:auto;
+      padding:0 10px;
+      border-bottom:none;
+      color:#5C3973;
+  }
