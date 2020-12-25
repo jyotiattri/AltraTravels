@@ -4187,6 +4187,10 @@ color: #FFF;
   float: left;
   width: 63%;
 }
+.acknowledgment-page .product-image img {
+  vertical-align: middle;
+  width: 85%;
+}
  
 .acknowledgment-page .product-price {
   float: left;
