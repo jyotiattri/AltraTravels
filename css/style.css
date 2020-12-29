@@ -3887,6 +3887,15 @@ color: #FFF;
   padding-right: 7px
 }
 
+figcaption.info {
+  clear: both;
+  padding-top: 10px;
+}
+.price-wrap {
+  width: 49%;
+  float: left;
+  text-align: right;
+}
 .shopping-cart .table-shopping-cart .price-wrap {
   line-height: 1.2
 }
@@ -3915,7 +3924,8 @@ color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%
+  width: 50%;
+  float:left;
 }
 
 .shopping-cart .dlist-align {
@@ -4270,4 +4280,6 @@ fieldset.scheduler-border {
       padding:0 10px;
       border-bottom:none;
       color:#5C3973;
+      background: #e9e7e7;
+    padding: 6px 12px;
   }
