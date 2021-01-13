@@ -684,7 +684,9 @@ form.newsletter_frm {
     border-radius: 5px;
 }
 .search-trekleader {
-    display: inline-block;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5px;
 }
 .search-stars-box{
     display: inline-block;
@@ -706,8 +708,22 @@ form.newsletter_frm {
 }
 .type-details {
   clear: both;
-  width: 100%;
   padding-top: 10px;
+}
+.type-details ul {
+  padding: 0px;
+  width: 50%;
+  float: left;
+}
+p.left-seats {
+  float: right;
+  width: 34%;
+  color: #fff;
+  background: #4a235e;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 .search-list-box {
     border: 1px solid #bdbdbd;
@@ -726,7 +742,7 @@ form.newsletter_frm {
     font-size: smaller;
     color: #6e6d6d;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .tax-rates {
   font-size: 12px;
@@ -734,7 +750,7 @@ form.newsletter_frm {
 }
 .price-rate {
     margin-bottom: 2px;
-    font-size: 14px;
+    font-size: 20px;
 }
 .type-details li {
     margin: 10px 0px;
@@ -2262,7 +2278,7 @@ h3.faq-section {
 }
 
 .parrent .nav-tabs>li {
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 
@@ -2280,6 +2296,11 @@ h3.faq-section {
     .parrent .nav-tabs>li>a {
         padding: 5px 5px;
     }
+}
+
+.parrent .nav>li {
+  font-size: 17px;
+  font-weight: bold;
 }
   /* Iternary css */
   ul.itinerary_list {
