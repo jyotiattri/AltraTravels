@@ -4284,6 +4284,23 @@ figcaption.info {
   font-weight: bold;
   color:#5C3973;
 }
+.customer-details a {
+  color: #4b1176;
+  text-decoration: underline !important;
+}
+.customer-details .question-details {
+  width: 70%;
+  float: left;
+}
+.customer-details .trek-leader-customer {
+  float: right;
+  width: 30%;
+}
+.customer-details .trek-leader-customer #final-price {
+  margin-right: 5px;
+  font-size: 22px;
+  /* font-weight: bold; */
+}
 
 fieldset.scheduler-border {
   border: 1px solid #e2e2e2 !important;
