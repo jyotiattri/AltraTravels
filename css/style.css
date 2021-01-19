@@ -684,7 +684,6 @@ form.newsletter_frm {
     border-radius: 5px;
 }
 .search-trekleader {
-  display: inline-block;
   font-size: 15px;
   margin-top: 5px;
 }
@@ -899,6 +898,7 @@ p.left-seats {
     margin-top: 15px;
     font-size: 28px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .search-list-title.primary-color:hover {
   color: #f37b4e;
@@ -4321,3 +4321,50 @@ fieldset.scheduler-border {
       background: #e9e7e7;
     padding: 6px 12px;
   }
+
+/* manage booking */
+.trek-manage {
+  font-size: 18px;
+}
+.manage-page .search-deal-image img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.manage-page .search-deal-image {
+  float: left;
+  position: relative;
+  width: 25%;
+}
+.manage-page h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.manage-page .table > tbody > tr > td{
+  border-top: none;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+.manage-page .mange-btn {
+  width: 20%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 12px;
+}
+.manage-page .trekker-details {
+  text-align: center;
+}
+.manage-page .form-check-label {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.manage-page .cancel-btn {
+  width: auto;
+  padding: 10px;
+  font-size: 18px;
+  margin: 12px;
+}
