@@ -1,0 +1,99 @@
+<!doctype html>
+<html data-n-head-ssr>
+
+<head>
+    <title>Altra Travels</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta data-n-head="ssr" name="trustpilot-one-time-domain-verification-id"
+        content="016033a5-a0a3-4b08-8b63-839d7df94213">
+    <meta data-n-head="ssr" name="msapplication-TileColor" content="#ffffff">
+    <meta data-n-head="ssr" name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="./adminstyle.css" type="text/css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div data-server-rendered="true">
+        <!---->
+        <div id="layout">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div id="logreg-forms">
+                    <form class="form-signin">
+                        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> New Patner</h1>
+                        <!-- <p>Don't have an account!</p>  -->
+                        <a href="#"><p class="partner-sign"><i class="fa fa-user-plus"></i> Sign up</p></a>
+                        <p class="patner-text">to patner with us</p>
+                        </form>
+                    </div>
+                  </div> <!-- coloumn ends-->
+                  <div class="vl"></div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="logreg-forms">
+                        <form class="form-signin">
+                            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Existing Partner
+                            </h1>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                            
+                            <button class="btn button-color btn-block" type="submit"><i class="fa fa-sign-in"></i> Submit</button>
+                            <a href="#" id="forgot_pswd">Forgot password?</a>
+                    
+                            </form>
+                            
+                <form action="/reset/password/" class="form-reset">
+                    <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                    <button class="btn button-color btn-block" type="submit">Reset Password</button>
+                    <a href="#" id="cancel_reset"><i class="fa fa-angle-left"></i> Back</a>
+                </form>
+                        </div>
+
+                </div> <!-- coloumn ends-->
+
+              </div> <!--  row ends -->
+          </div>  <!-- container ends-->
+
+
+
+
+            </div>
+            </div>
+
+
+            <script>
+    
+            function toggleResetPswd(e){
+    e.preventDefault();
+    $('#logreg-forms .form-signin').toggle() // display:block or none
+    $('#logreg-forms .form-reset').toggle() // display:block or none
+}
+
+function toggleSignUp(e){
+    e.preventDefault();
+    $('#logreg-forms .form-signin').toggle(); // display:block or none
+    $('#logreg-forms .form-signup').toggle(); // display:block or none
+}
+
+$(()=>{
+    // Login Register Form
+    $('#logreg-forms #forgot_pswd').click(toggleResetPswd);
+    $('#logreg-forms #cancel_reset').click(toggleResetPswd);
+    $('#logreg-forms #btn-signup').click(toggleSignUp);
+    $('#logreg-forms #cancel_signup').click(toggleSignUp);
+})
+            </script>
+
+    </body>
+    </html>
