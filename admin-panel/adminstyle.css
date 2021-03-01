@@ -60,11 +60,12 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     font-size: 20px;
     font-weight: bold;
 }
-.edit-form .form-control{
+#layout .edit-form .form-control {
     display: inline-block;
     margin: 10px;
+    width: 30%;
 }
-.edit-form#address-info .form-control {
+#layout .edit-form#address-info .form-control {
     width: 22%;
     display: inline-block;
     margin: 10px;
@@ -90,4 +91,201 @@ button#activate, button#pending, button#resend-mail, button#reactive, button#dea
 }
 form#basictrek-info {
     margin-bottom: 30px;
+}
+
+/* calender css */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+  }
+  @media (max-width: 800px) {
+    table .time {
+      display: none;
+    }
+  }
+  summary {
+    padding-bottom: 0.25em;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: right;
+  }
+  tr {
+    position: relative;
+  }
+  th {
+    text-align: right;
+    color: #999;
+    font-weight: normal;
+    font-size: 0.85em;
+  }
+  td {
+    width: 14.285714286%;
+    border: 1px solid #4a235e;
+  }
+  .date {
+    text-align: right;
+    display: block;
+    height: 0;
+    font-size: 0.8em;
+    padding: 0.25em;
+    padding-bottom: 73%;
+    position: relative;
+    border-bottom: 1px solid #dedbdb;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+  tr:first-child:not(.current-week) .date {
+    border-top: 1px solid #dedbdb;
+  }
+  .date ul,
+  .date li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+  }
+  .date ul {
+    text-align: left;
+    font-size: 0.9em;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    font-weight: normal;
+  }
+  .date li {
+    color: #222;
+    width: 100%;
+    height: 1.4em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+  }
+  .date li:before {
+    content: '\2022';
+    color: inherit;
+    display: inline-block;
+    padding-right: 0.25em;
+  }
+  .time {
+    float: right;
+    text-align: right;
+    color: #999;
+  }
+  .event {
+    color: #333;
+  }
+  .previous-week .date {
+    border: none;
+  }
+  .current-week {
+    border-top: 4px solid #fed6d7;
+  }
+  .current-day {
+    background: #fed6d7;
+    border-top: 4px solid #cb6c6b;
+  }
+  .current-day .date {
+    font-weight: bold;
+    color: #cb6c6b;
+  }
+  .weekend {
+    background-clop: padding-box;
+    background: #f5f5f5;
+  }
+  .date .different-calendar {
+    color: #00c800;
+  }
+
+  /* calender ends */
+  .trek_btns .btn.button-color.btn-block {
+    font-size: 18px;
+    font-weight: bold;
+    width: 50%;
+}
+select#view {
+    float: right;
+    margin-right: 20px;
+}
+.trek-id li, .trek-seats li {
+    display: inline;
+    padding: 20px;
+}
+.treks-infomain {
+    margin-top: 60px;
+    /* clear: both; */
+}
+.trek-idbox {
+    border: 1px solid #4a235e;
+    padding: 10px;
+    margin: 10px;
+}
+.add-category-form #view {
+  float: left;
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.add-category-form .form-control {
+  margin-bottom: 20px;
+}
+.checkbox-item {
+  display: inline-block;
+  margin: 10px;
+}
+/********* check box ***************/
+.regular-checkbox {
+  display: none;
+}
+.big-checkbox + label {
+  padding: 18px;
+}
+.regular-checkbox + label {
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+  padding: 7px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+}
+.regular-checkbox.red + label {
+  background-color: red;
+}
+.regular-checkbox.green + label {
+  background-color: green;
+}
+.big-checkbox:checked + label:after {
+  font-size: 28px;
+  left: 6px;
+}
+
+.regular-checkbox:checked + label:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #fff;
+}
+/********* check box ends ***************/
+.add-cate-info {
+  padding: 40px 0px;
+}
+.add-cate-info h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  background: #4a235e;
+  padding: 8px;
+  text-align: center;
+}
+.publish-btn {
+  float: right;
+ margin-bottom: 20px;
 }
