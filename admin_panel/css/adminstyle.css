@@ -40,12 +40,7 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 .profile_btns li a {
     color: #fff;
 }
-.breadcrumb {
-    background-color: transparent;
-}
-.breadcrumb .fa.fa-angle-double-left {
-    margin-right: 6px;
-}
+
 .top_btns {
     text-align: right;
 }
@@ -60,12 +55,12 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     font-size: 20px;
     font-weight: bold;
 }
-#layout .edit-form .form-control {
+.edit-form .form-control {
     display: inline-block;
     margin: 10px;
     width: 30%;
 }
-#layout .edit-form#address-info .form-control {
+ .edit-form#address-info .form-control {
     width: 22%;
     display: inline-block;
     margin: 10px;
@@ -101,6 +96,7 @@ table {
     height: 100%;
     margin-bottom: 25px;
   }
+  
   @media (max-width: 800px) {
     table .time {
       display: none;
@@ -117,7 +113,7 @@ table {
   }
   th {
     text-align: right;
-    color: #999;
+    color: #3c3939;
     font-weight: normal;
     font-size: 0.85em;
   }
@@ -252,7 +248,6 @@ select#view {
   display: inline-block;
   position: relative;
   top: 8px;
-  margin-right: 5px;
 }
 .regular-checkbox.red + label {
   background-color: red;
@@ -273,12 +268,24 @@ select#view {
   left: 3px;
   color: #fff;
 }
+.button-color {
+  background: #4a235e;
+  cursor: pointer;
+  color: #fff;
+}
+.button-color:hover {
+  background: #603874fc;
+  color: #fff !important;
+}
+.button-color:focus {
+  color: #fff !important;
+}
 /********* check box ends ***************/
 .add-cate-info {
   padding: 40px 0px;
 }
 .add-cate-info h1 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   color: #fff;
   background: #4a235e;
@@ -288,4 +295,34 @@ select#view {
 .publish-btn {
   float: right;
  margin-bottom: 20px;
+}
+.trek-idbox .table > thead > tr > th, .trek-idbox .table > tbody > tr > td {
+  border-bottom: none;
+}
+.trek-idbox td {
+  border: none;
+}
+.customer-detailsadd-form .form-control {
+  width: 17%;
+  display: inline-block;
+  margin: 10px;
+}
+.customer-details {
+  padding-bottom: 50px;
+}
+.discount-offer {
+  border: 1px solid #4a235e;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.treks-infomain .table{
+  background-color: transparent;
+}
+form#customer-detailsadd {
+  margin-top: 20px;
+}
+.trek-idbox th {
+  color: #4a235e;
+  font-size: 16px;
+  font-weight: bold;
 }

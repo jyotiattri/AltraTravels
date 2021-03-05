@@ -1,37 +1,76 @@
-<!doctype html>
-<html data-n-head-ssr>
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Altra Travels</title>
-    <meta data-n-head="ssr" charset="utf-8">
-    <meta data-n-head="ssr" name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-    <meta data-n-head="ssr" name="trustpilot-one-time-domain-verification-id"
-        content="016033a5-a0a3-4b08-8b63-839d7df94213">
-    <meta data-n-head="ssr" name="msapplication-TileColor" content="#ffffff">
-    <meta data-n-head="ssr" name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-
-    <link rel="stylesheet" href="./adminstyle.css" type="text/css">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Panel</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/adminstyle.css" rel="stylesheet">
+	
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 </head>
-
 <body>
-    <div data-server-rendered="true">
-        <!---->
-        <div id="layout">
-            <div class="container">
-                <div class="top-bar">
-                    <ul class="breadcrumb">
-                        <li><i class="fa fa-angle-double-left" aria-hidden="true"></i><a href="#">Back</a></li>
-                    </ul>
-                </div>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>Admin</span>Panel</a>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+				<img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
+			</div>
+			<div class="profile-usertitle">
+				<div class="profile-usertitle-name">Username</div>
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Edit Profile</a></li>
+			<li class="active"><a href="add-trekleader.html"><em class="fa fa-calendar">&nbsp;</em> Add / Manage Trek Leaders</a></li>
+			<li><a href="trek-booking.html"><em class="fa fa-bar-chart">&nbsp;</em> Add / Manage Trek Bookings</a></li>
+			<li><a href="promotion.html"><em class="fa fa-toggle-off">&nbsp;</em> Promotion</a></li>
+			<li><a href="#"><em class="fa fa-clone">&nbsp;</em>Ratings & Review </a></li>
+		<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="index.html">
+					<em class="fa fa-home"></em>
+				</a></li>
+				<li class="active">Dashboard</li>
+			</ol>
+		</div><!--/.row-->
+		
+
+          <div class="container">
+                <p class="trek-id-cate text-right">Trek ID </p>
+                <div class="row"> <!-- main row starts -->
+                    <div class="col-lg-9 col-md-12 col-sm-12">
 
                 <div class="row">
                     <div class="col-lg-8 col-md-6 col-sm-12">
@@ -81,14 +120,14 @@
 
                 <div class="add-cate-info">
                     <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
                             <h1>Inclusion/Exclusion</h1>
 
                         </div>
-                        <div class="col-lg-10 col-md-8 col-sm-12">
+                        <div class="col-lg-9 col-md-8 col-sm-12">
                             <div class="row cartegory-1">
                                 <!-- inner row -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -100,7 +139,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -112,7 +151,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -124,7 +163,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -136,7 +175,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -148,7 +187,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -160,7 +199,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -172,7 +211,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -184,7 +223,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -196,7 +235,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -208,7 +247,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -220,7 +259,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -232,7 +271,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -244,7 +283,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -256,7 +295,7 @@
                                         </label>
                                     </div>
                                 </div> <!-- inner coloumn -->
-                                <div class="col-lg-3">
+                                <div class="col-lg-4">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkbox-2-1"
                                             class="regular-checkbox big-checkbox green"><label
@@ -278,11 +317,11 @@
 
                 <div class="add-cate-info">
                     <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
                             <h1>Category</h1>
 
                         </div>
-                        <div class="col-lg-10 col-md-8 col-sm-12">
+                        <div class="col-lg-9 col-md-8 col-sm-12">
                             <div class="row cartegory-1">
                                 <!-- inner row -->
                                 <div class="col-lg-3">
@@ -430,11 +469,11 @@
 
                 <div class="add-cate-info">
                     <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
                             <h1>Difficulty Level</h1>
 
                         </div>
-                        <div class="col-lg-10 col-md-8 col-sm-12">
+                        <div class="col-lg-9 col-md-8 col-sm-12">
                             <div class="row cartegory-1">
                                 <!-- inner row -->
                                 <div class="col-lg-3">
@@ -472,17 +511,75 @@
 
                     </div><!-- row ends -->
                 </div>
-<div class="publish-btn">
-               <button type="button" id="publish" class="form-control btn button-color btn-block right" required="" autofocus="">PUBLISH</button>
-            </div>
+                </div> <!-- coloumn ends -->
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <button type="button" id="edit-tek" class="form-control btn button-color btn-block" required="" autofocus="">EDIT TREK</button>
+                    <button type="button" id="promte-trek" class="form-control btn button-color btn-block" required="" autofocus="">PROMOTE TREK</button>
+                    <button type="button" id="delete-trek" class="form-control btn button-color btn-block" required="" autofocus="">DELETE TREK   </button>
+
+</div><!-- coloumn ends -->
+
+</div> <!-- main row ends-->
+
+<div class="customer-details">
+    <p class="tagline">Customer Details</p>
+    <button type="button" id="add-customer-detail" class=" btn button-color" required="" autofocus="">ADD  CUSTOMER DETAILS</button>
+    <form class="customer-detailsadd-form" id="customer-detailsadd">
+        <input type="text" id="user-name" class="form-control" placeholder="BOOKING ID " required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="FULL NAME" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="EMAIL ID" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="CONTACT NO." required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="PAYMENT STATUS" required="" autofocus="">
+      </form>
+      <form class="customer-detailsadd-form" id="customer-detailsadd">
+        <input type="text" id="user-name" class="form-control" placeholder="BOOKING ID " required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="FULL NAME" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="EMAIL ID" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="CONTACT NO." required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="PAYMENT STATUS" required="" autofocus="">
+      </form>
+      <form class="customer-detailsadd-form" id="customer-detailsadd">
+        <input type="text" id="user-name" class="form-control" placeholder="BOOKING ID " required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="FULL NAME" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="EMAIL ID" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="CONTACT NO." required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="PAYMENT STATUS" required="" autofocus="">
+      </form>
+      <form class="customer-detailsadd-form" id="customer-detailsadd">
+        <input type="text" id="user-name" class="form-control" placeholder="BOOKING ID " required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="FULL NAME" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="EMAIL ID" required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="CONTACT NO." required="" autofocus="">
+            <input type="text" id="user-name" class="form-control" placeholder="PAYMENT STATUS" required="" autofocus="">
+      </form>
+</div>
             </div> <!-- container ends-->
-
-
-
-
-        </div>
-    </div>
-
-</body>
-
-</html>
+          <div class="row">	
+                <div class="col-sm-12">
+                  <p class="back-link">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</a></p>
+                </div>
+              </div><!--/.row-->
+            </div>	<!--/.main-->
+            
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/chart.min.js"></script>
+            <script src="js/chart-data.js"></script>
+            <script src="js/easypiechart.js"></script>
+            <script src="js/easypiechart-data.js"></script>
+            <script src="js/bootstrap-datepicker.js"></script>
+            <script src="js/custom.js"></script>
+            <script>
+              window.onload = function () {
+            var chart1 = document.getElementById("line-chart").getContext("2d");
+            window.myLine = new Chart(chart1).Line(lineChartData, {
+            responsive: true,
+            scaleLineColor: "rgba(0,0,0,.2)",
+            scaleGridLineColor: "rgba(0,0,0,.05)",
+            scaleFontColor: "#c5c7cc"
+            });
+          };
+            </script>
+              
+          </body>
+          </html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Panel</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/adminstyle.css" rel="stylesheet">
+	
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>Admin</span>Panel</a>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+				<img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
+			</div>
+			<div class="profile-usertitle">
+				<div class="profile-usertitle-name">Username</div>
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Edit Profile</a></li>
+			<li class="active"><a href="add-trekleader.html"><em class="fa fa-calendar">&nbsp;</em> Add / Manage Trek Leaders</a></li>
+			<li><a href="trek-booking.html"><em class="fa fa-bar-chart">&nbsp;</em> Add / Manage Trek Bookings</a></li>
+			<li><a href="promotion.html"><em class="fa fa-toggle-off">&nbsp;</em> Promotion</a></li>
+			<li><a href="#"><em class="fa fa-clone">&nbsp;</em>Ratings & Review </a></li>
+			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="index.html">
+					<em class="fa fa-home"></em>
+				</a></li>
+				<li class="active">Dashboard</li>
+			</ol>
+		</div><!--/.row-->
+		
+
+          <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <form class="add-category-form" id="basictrek-info">
+                                    <select id="view">
+                                        <option>View</option>
+                                        <option>Trek Lead 1</option>
+                                        <option>Trek Lead 2</option>
+                                        <option>Trek Lead 3</option>
+                                    </select>
+                                    <input type="text" id="start-point" class="form-control" placeholder="Start Point"
+                                        required="" autofocus="">
+                                    <input type="text" id="trek-duration" class="form-control"
+                                        placeholder="Trek Duration" required="" autofocus="">
+                                    <input type="text" id="start-date" class="form-control" placeholder="Start Date"
+                                        required="" autofocus="">
+                                    <input type="text" id="group-size" class="form-control" placeholder="Group Size"
+                                        required="" autofocus="">
+                                </form>
+                            </div><!-- coloumn ends -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <form class="add-category-form" id="basictrek-info">
+                                    <input type="text" id="user-name" class="form-control" placeholder="Trek Lead Name"
+                                        required="" autofocus="">
+                                    <input type="text" id="end-point" class="form-control" placeholder="End Point"
+                                        required="" autofocus="">
+                                    <input type="text" id="trek-heading" class="form-control"
+                                        placeholder="Trek Heading {Trek Name | Duration | Start point – End point}"
+                                        required="" autofocus="">
+                                    <input type="text" id="end-date" class="form-control" placeholder="End Date"
+                                        required="" autofocus="">
+                                    <input type="text" id="price-per-person" class="form-control"
+                                        placeholder="Price Per person" required="" autofocus="">
+                                </form>
+                            </div><!-- coloumn ends -->
+                        </div> <!-- row ends -->
+                        <textarea rows="4" cols="10" placeholder="Itinerary" class="form-control"
+                            id="iternary"></textarea>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="../img/girl.png">
+                    </div>
+                </div> <!-- row ends -->
+
+                <div class="add-cate-info">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                            <h1>Inclusion/Exclusion</h1>
+
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-sm-12">
+                            <div class="row cartegory-1">
+                                <!-- inner row -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Veg/Non Veg Meal
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Bonfire
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sleeping Bag
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Luggage offloading
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Dinning Tent
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Veg Meal
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Toilet Tent
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Forest Permit
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Transportation
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Insurance
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            DJ
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            First Aid
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Emergency evacuation
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Kitchen Tent
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-1"
+                                            class="regular-checkbox big-checkbox green"><label
+                                            for="checkbox-2-1"></label>
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Entry Fee
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+
+                            </div><!-- inner row ends -->
+
+                        </div>
+
+                    </div><!-- row ends -->
+                </div>
+
+                <div class="add-cate-info">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                            <h1>Category</h1>
+
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-sm-12">
+                            <div class="row cartegory-1">
+                                <!-- inner row -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Weekend Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Day Hikes
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Night Hikes
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Winter Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Summer Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Monsoon Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Spring Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Lake Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Waterfall Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Village Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Cultural Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Luxury Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Alpine Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Expeditions
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Mindful Treks
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+
+                            </div><!-- inner row ends -->
+
+                        </div>
+
+                    </div><!-- row ends -->
+                </div>
+
+                <div class="add-cate-info">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                            <h1>Difficulty Level</h1>
+
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-sm-12">
+                            <div class="row cartegory-1">
+                                <!-- inner row -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Easy
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Moderate
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                <div class="col-lg-3">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkbox-2-2"
+                                            class="regular-checkbox big-checkbox red"><label for="checkbox-2-2"></label>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Difficult
+                                        </label>
+                                    </div>
+                                </div> <!-- inner coloumn -->
+                                
+
+                            </div><!-- inner row ends -->
+
+                        </div>
+
+                    </div><!-- row ends -->
+                </div>
+<div class="publish-btn">
+               <button type="button" id="publish" class="form-control btn button-color btn-block right" required="" autofocus="">PUBLISH</button>
+            </div>
+            </div> <!-- container ends-->
+            <div class="row">	
+                <div class="col-sm-12">
+                  <p class="back-link">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</a></p>
+                </div>
+              </div><!--/.row-->
+            </div>	<!--/.main-->
+            
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/chart.min.js"></script>
+            <script src="js/chart-data.js"></script>
+            <script src="js/easypiechart.js"></script>
+            <script src="js/easypiechart-data.js"></script>
+            <script src="js/bootstrap-datepicker.js"></script>
+            <script src="js/custom.js"></script>
+            <script>
+              window.onload = function () {
+            var chart1 = document.getElementById("line-chart").getContext("2d");
+            window.myLine = new Chart(chart1).Line(lineChartData, {
+            responsive: true,
+            scaleLineColor: "rgba(0,0,0,.2)",
+            scaleGridLineColor: "rgba(0,0,0,.05)",
+            scaleFontColor: "#c5c7cc"
+            });
+          };
+            </script>
+              
+          </body>
+          </html>
