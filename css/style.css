@@ -1097,10 +1097,12 @@ p.left-seats {
     color: #000;
     font-size:16px;
 }
-.widget h2 {
+.footer h2 {
     font-size: 18px;
     color: #4a235e;
     font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 .midlight_purple-footer {
     padding: 5px 0px;
@@ -4367,4 +4369,7 @@ fieldset.scheduler-border {
   padding: 10px;
   font-size: 18px;
   margin: 12px;
+}
+.terms-page .next_btn{
+  margin-top: 20px;
 }
